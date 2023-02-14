@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+ <style>  
+  
+    input[type=text] {
+    width: 100%;
+    border: 2px solid red;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.btn {
+  border: none;
+  background-color: rgba(12, 214, 69, 0.886);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+</style> 
+</head>
+    <form>
+        <fieldset>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" placeholder="Your first name.."><br><br>
+        <label for="lname">Last  name:</label>
+        <input type="text" id="lname" placeholder="Your last name.."><br><br>
+        <label for="gender">Gender:</label>
+        <input type="checkbox" id="male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female">
+        <label for="male">Female</label>
+        <input type="checkbox" id="Other">
+        <label for="Other">Other</label><br>
+        
+        
+       <p>Choose your favorite Web language:</p>
+       <input type="radio" id="html" name="fav_language" value="HTML">
+       <label for="html">HTML</label><br>
+       <input type="radio" id="css" name="fav_language" value="CSS">
+       <label for="css">CSS</label><br>
+       <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+       <label for="javascript">JavaScript</label><br><br>
+ 
+       <label for="cars">Choose a car:</label>
+       <select id="cars" name="cars">
+       <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+       <option value="fiat">Fiat</option>
+       <option value="audi">Audi</option><br><br>
+       </select><br><br>
+       <label for="address">Address:</label><br>
+       <textarea rows="4" cols="50" name="comment" form="usrform">Enter Your address here...</textarea>
+       <br><br>
+       <button class="btn success">submit</button>
+
+
+        </fieldset>
+    </form>
+</html>
